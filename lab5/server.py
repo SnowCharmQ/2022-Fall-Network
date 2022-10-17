@@ -2,7 +2,7 @@ import dns.resolver
 from socket import *
 
 server_port = 12000
-server_socket = socket(AF_INET, SOCK_DGRAM)
+server_socket = socket(AF_INET, SOCK_STREAM)
 server_socket.bind(('127.0.0.1', server_port))
 print("The server is ready to receive")
 
